@@ -1,3 +1,5 @@
+package lanceur;
+
 public class Ariane5 extends Lanceurs {
 
     public Ariane5() {

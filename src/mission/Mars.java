@@ -1,6 +1,8 @@
-public class Orbite extends Missions {
-    public Orbite() {
-        super("Orbite terrestre", 400, 1.0, false  );
+package mission;
+
+public class Mars extends Missions {
+    public Mars() {
+        super("mission.Mars", 225000000, 0.000015, true );
     }
 
     @Override
@@ -8,3 +10,4 @@ public class Orbite extends Missions {
         return (masseTotale * getDistanceKm() * getCoefficientCarburant()) / 1000;
     }
 }
+

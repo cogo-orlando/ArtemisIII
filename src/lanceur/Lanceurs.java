@@ -1,3 +1,5 @@
+package lanceur;
+
 public abstract class Lanceurs {
 
     private String nom;
@@ -33,6 +35,6 @@ public abstract class Lanceurs {
     @Override
     public String toString() {
         return nom + " | Prix: " + prixMillions + "M€ | Charge utile: "
-                + chargeUtileMaxTonnes + "t | Boosters max: " + boostersMax;
+                + chargeUtileMaxTonnes + "t | modele.Boosters max: " + boostersMax;
     }
 }

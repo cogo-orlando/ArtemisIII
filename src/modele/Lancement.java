@@ -1,3 +1,7 @@
+package modele;
+
+import mission.Missions;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 

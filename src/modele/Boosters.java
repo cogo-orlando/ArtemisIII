@@ -1,3 +1,5 @@
+package modele;
+
 public class Boosters {
 
     private String nom;

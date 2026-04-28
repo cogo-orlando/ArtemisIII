@@ -1,3 +1,8 @@
+package modele;
+
+import capsule.Capsules;
+import lanceur.Lanceurs;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,7 +49,7 @@ public class Fusee {
     @Override
     public String toString() {
         return "Fusée: " + lanceur.getNom() + " | Capsule: " + capsule.getNom()
-                + " | Boosters: " + boosters.size()
+                + " | modele.Boosters: " + boosters.size()
                 + " | Masse totale: " + getMasseTotale() + "t"
                 + " | Prix total: " + getPrixTotal() + "M€";
     }

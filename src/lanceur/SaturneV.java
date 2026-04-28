@@ -1,3 +1,5 @@
+package lanceur;
+
 public class SaturneV extends Lanceurs {
 
     public SaturneV() {
@@ -6,7 +8,7 @@ public class SaturneV extends Lanceurs {
 
     @Override
     public String getDescription() {
-        return "Saturne V - Lanceur légendaire du programme Apollo. " +
+        return "Saturne V - Lanceur légendaire du programme capsule.Apollo. " +
                 "Le plus puissant jamais construit.";
     }
 }

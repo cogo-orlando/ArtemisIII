@@ -1,3 +1,5 @@
+package mission;
+
 public abstract class Missions {
 
     private String nom;

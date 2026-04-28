@@ -1,3 +1,5 @@
+package capsule;
+
 public class CargoDragon extends Capsules {
 
     public CargoDragon() {
@@ -7,6 +9,6 @@ public class CargoDragon extends Capsules {
     @Override
     public String getDescription() {
         return "Cargo Dragon - Capsule cargo de SpaceX. " +
-                "Non habitée, transporte du matériel vers l'ISS.";
+                "Non habitée, transporte du matériel vers l'mission.ISS.";
     }
 }

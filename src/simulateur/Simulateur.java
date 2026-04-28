@@ -1,3 +1,11 @@
+package simulateur;
+
+import capsule.*;
+import exception.CarburantInsuffisant;
+import lanceur.*;
+import mission.*;
+import modele.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

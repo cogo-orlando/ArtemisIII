@@ -1,6 +1,8 @@
-public class ISS extends Missions {
-    public ISS() {
-        super("ISS", 400, 1.2, true);
+package mission;
+
+public class Orbite extends Missions {
+    public Orbite() {
+        super("mission.Orbite terrestre", 400, 1.0, false  );
     }
 
     @Override

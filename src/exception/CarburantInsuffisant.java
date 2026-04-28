@@ -1,3 +1,5 @@
+package exception;
+
 public class CarburantInsuffisant extends Exception {
 
     public CarburantInsuffisant(String message) {

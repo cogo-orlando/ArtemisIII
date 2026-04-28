@@ -1,6 +1,8 @@
-public class Mars extends Missions {
-    public Mars() {
-        super("Mars", 225000000, 0.000015, true );
+package mission;
+
+public class ISS extends Missions {
+    public ISS() {
+        super("mission.ISS", 400, 1.2, true);
     }
 
     @Override
@@ -8,4 +10,3 @@ public class Mars extends Missions {
         return (masseTotale * getDistanceKm() * getCoefficientCarburant()) / 1000;
     }
 }
-

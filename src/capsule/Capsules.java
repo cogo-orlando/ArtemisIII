@@ -1,3 +1,5 @@
+package capsule;
+
 public abstract class Capsules {
 
     private String nom;
