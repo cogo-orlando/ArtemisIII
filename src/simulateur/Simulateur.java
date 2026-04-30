@@ -128,22 +128,26 @@ public class Simulateur {
     // 4. Choix de la mission
     // 5. Résumé et confirmation
     private void nouvelleMission() {
-        // Affiche la liste des lanceurs et récupère le choix
         System.out.println("\n--- Choisir un lanceur ---");
         for (int i = 0; i < lanceurs.size(); i++) {
             System.out.println((i + 1) + ". " + lanceurs.get(i));
         }
         System.out.print("Votre choix : ");
-        // On récupère le lanceur choisi dans la liste
-        Lanceurs lanceur = lanceurs.get(lireEntier() - 1);
-
-        // Affiche la liste des capsules et récupère le choix
-        System.out.println("\n--- Choisir une capsule ---");
-        for (int i = 0; i < capsules.size(); i++) {
-            System.out.println((i + 1) + ". " + capsules.get(i));
+        int choixLanceur = lireEntier();
+        while (choixLanceur < 1 || choixLanceur > lanceurs.size()) {
+            System.out.println("Choix invalide, reessayez :");
+            choixLanceur = lireEntier();
         }
+        Lanceurs lanceur = lanceurs.get(choixLanceur - 1);
+
+        // Capsule
         System.out.print("Votre choix : ");
-        Capsules capsule = capsules.get(lireEntier() - 1);
+        int choixCapsule = lireEntier();
+        while (choixCapsule < 1 || choixCapsule > capsules.size()) {
+            System.out.println("Choix invalide, reessayez :");
+            choixCapsule = lireEntier();
+        }
+        Capsules capsule = capsules.get(choixCapsule - 1);
 
         // Création de la fusée par composition : lanceur + capsule
         Fusee fusee = new Fusee(lanceur, capsule);
@@ -175,13 +179,14 @@ public class Simulateur {
             fusee.ajouterBooster(boosters.get(choixBooster - 1));
         }
 
-        // Affiche la liste des missions et récupère le choix
-        System.out.println("\n--- Choisir une mission ---");
-        for (int i = 0; i < missions.size(); i++) {
-            System.out.println((i + 1) + ". " + missions.get(i));
-        }
+        // Mission
         System.out.print("Votre choix : ");
-        Missions mission = missions.get(lireEntier() - 1);
+        int choixMission = lireEntier();
+        while (choixMission < 1 || choixMission > missions.size()) {
+            System.out.println("Choix invalide, reessayez :");
+            choixMission = lireEntier();
+        }
+        Missions mission = missions.get(choixMission - 1);
 
         // Affiche le résumé complet de la fusée et de la mission choisie
         System.out.println("\n--- Resume ---");
@@ -291,7 +296,7 @@ public class Simulateur {
                             l.getMission().getNom() + ";" +
                             l.isSucces() + ";" +
                             l.getRaison() + ";" +
-                            l.getCoutTotal()
+                            String.format("%.2f", l.getCoutTotal())
             );
             writer.newLine();
         } catch (IOException e) {
