@@ -42,7 +42,6 @@ public class Simulateur {
         historique = new ArrayList<>();
         scanner = new Scanner(System.in);
         initialiserCatalogues();
-        System.out.println("Historique charge !");
     }
 
     // Méthode statique qui retourne l'instance unique du Simulateur

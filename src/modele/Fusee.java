@@ -6,8 +6,8 @@ import lanceur.Lanceurs;
 import java.util.ArrayList;
 import java.util.List;
 
-// Classe Fusee : assemblage par COMPOSITION
-// Une fusée N'HERITE de rien, elle CONTIENT un lanceur, une capsule et des boosters
+// Classe Fusee : COMPOSITION
+// Une fusée n'hérite de rien, elle contient un lanceur, une capsule et des boosters
 public class Fusee {
 
     private Lanceurs lanceur;
