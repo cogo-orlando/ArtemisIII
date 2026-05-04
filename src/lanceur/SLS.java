@@ -8,7 +8,7 @@ public class SLS extends Lanceurs {
 
     @Override
     public String getDescription() {
-        return "lanceur.SLS - Space Launch System de la NASA. " +
+        return "SLS - Space Launch System de la NASA. " +
                 "Successeur de Saturne V pour les missions Artemis.";
     }
 }

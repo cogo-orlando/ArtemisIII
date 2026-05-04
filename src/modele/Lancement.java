@@ -38,7 +38,7 @@ public class Lancement {
         return "Date: " + date.format(formatter)
                 + " | Lanceur: " + fusee.getLanceur().getNom()
                 + " | Mission: " + mission.getNom()
-                + " | " + (succes ? "Succes" : "Echec")
+                + " | " + (succes ? "Succès" : "Echec")
                 + " | Raison: " + raison
                 + " | Cout: " + coutTotal + "M€";
     }

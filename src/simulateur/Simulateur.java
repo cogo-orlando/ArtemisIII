@@ -133,19 +133,25 @@ public class Simulateur {
         for (int i = 0; i < lanceurs.size(); i++) {
             System.out.println((i + 1) + ". " + lanceurs.get(i));
         }
+
+        //Lanceur
         System.out.print("Votre choix : ");
         int choixLanceur = lireEntier();
         while (choixLanceur < 1 || choixLanceur > lanceurs.size()) {
-            System.out.println("Choix invalide, reessayez :");
+            System.out.println("Choix invalide, réessayez :");
             choixLanceur = lireEntier();
         }
         Lanceurs lanceur = lanceurs.get(choixLanceur - 1);
 
         // Capsule
+        System.out.println("\n--- Choisir une capsule ---");
+        for (int i = 0; i < capsules.size(); i++) {
+            System.out.println((i + 1) + ". " + capsules.get(i));
+        }
         System.out.print("Votre choix : ");
         int choixCapsule = lireEntier();
         while (choixCapsule < 1 || choixCapsule > capsules.size()) {
-            System.out.println("Choix invalide, reessayez :");
+            System.out.println("Choix invalide, réessayez :");
             choixCapsule = lireEntier();
         }
         Capsules capsule = capsules.get(choixCapsule - 1);
@@ -173,18 +179,15 @@ public class Simulateur {
             }
         }
 
-        System.out.print("Votre choix (0 pour passer) : ");
-        int choixBooster = lireEntier();
-        // On ajoute le booster seulement si l'utilisateur n'a pas choisi 0
-        if (choixBooster != 0) {
-            fusee.ajouterBooster(boosters.get(choixBooster - 1));
-        }
-
         // Mission
+        System.out.println("\n--- Choisir une mission ---");
+        for (int i = 0; i < missions.size(); i++) {
+            System.out.println((i + 1) + ". " + missions.get(i));
+        }
         System.out.print("Votre choix : ");
         int choixMission = lireEntier();
         while (choixMission < 1 || choixMission > missions.size()) {
-            System.out.println("Choix invalide, reessayez :");
+            System.out.println("Choix invalide, réessayez :");
             choixMission = lireEntier();
         }
         Missions mission = missions.get(choixMission - 1);
@@ -319,7 +322,7 @@ public class Simulateur {
                         " | Lanceur: " + parts[1] +
                         " | Capsule: " + parts[2] +
                         " | Mission: " + parts[3] +
-                        " | " + (parts[4].equals("true") ? "Succés" : "Echec") +
+                        " | " + (parts[4].equals("true") ? "Succès" : "Echec") +
                         " | Raison: " + parts[5] +
                         " | Cout: " + parts[6] + "M€");
             }

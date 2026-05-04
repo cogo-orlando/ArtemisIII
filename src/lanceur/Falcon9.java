@@ -3,7 +3,7 @@ package lanceur;
 public class Falcon9 extends Lanceurs {
 
     public Falcon9() {
-        super("Falcon9", 60, 549, 500, 22, 0, true);
+        super("Falcon 9", 60, 549, 500, 22, 0, true);
     }
 
     @Override
