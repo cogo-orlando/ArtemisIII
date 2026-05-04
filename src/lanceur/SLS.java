@@ -3,7 +3,7 @@ package lanceur;
 public class SLS extends Lanceurs {
 
     public SLS() {
-        super("lanceur.SLS", 2000, 2600, 2600, 130, 2, true);
+        super("SLS", 2000, 2600, 2600, 130, 2, true);
     }
 
     @Override

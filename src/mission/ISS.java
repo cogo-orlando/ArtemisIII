@@ -2,7 +2,7 @@ package mission;
 
 public class ISS extends Missions {
     public ISS() {
-        super("mission.ISS", 400, 1.2, true);
+        super("ISS", 400, 1.2, true);
     }
 
     @Override

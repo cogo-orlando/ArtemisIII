@@ -54,7 +54,7 @@ public class Simulateur {
         return instance;
     }
 
-    // Initialise tous les catalogues de composants disponiblese
+    // Initialise tous les catalogues de composants disponibles
     // Polymorphisme : on stocke des SaturneV, Ariane5... dans une List<Lanceurs>
     private void initialiserCatalogues() {
 
@@ -112,7 +112,7 @@ public class Simulateur {
                     afficherHistorique();
                     break;
                 case 0:
-                    System.out.println("Au revoir !");
+                    System.out.println("A bientôt !");
                     running = false;
                     break;
                 default:
@@ -121,12 +121,13 @@ public class Simulateur {
         }
     }
 
-    // Gère le flux complet d'une nouvelle mission :
+    // Nouvelle mission :
     // 1. Choix du lanceur
     // 2. Choix de la capsule
     // 3. Choix des boosters
     // 4. Choix de la mission
     // 5. Résumé et confirmation
+
     private void nouvelleMission() {
         System.out.println("\n--- Choisir un lanceur ---");
         for (int i = 0; i < lanceurs.size(); i++) {
@@ -194,13 +195,13 @@ public class Simulateur {
         System.out.println("Mission : " + mission.getNom());
 
         // Demande confirmation avant de lancer la simulation
-        System.out.print("\nConfirmer le lancement ? (1 = Oui, 0 = Non) : ");
+        System.out.print("\nConfirmer le lancement ? 1 = Oui / 0 = Non : ");
         if (lireEntier() == 1) {
             lancerSimulation(fusee, mission);
         }
     }
 
-    // Coeur de la simulation : vérifie toutes les conditions et détermine le résultat
+    // Vérifie toutes les conditions et détermine le résultat
     private void lancerSimulation(Fusee fusee, Missions mission) {
         boolean succes = true;
         String raison = "Lancement réussi";
@@ -318,7 +319,7 @@ public class Simulateur {
                         " | Lanceur: " + parts[1] +
                         " | Capsule: " + parts[2] +
                         " | Mission: " + parts[3] +
-                        " | " + (parts[4].equals("true") ? "Succes" : "Echec") +
+                        " | " + (parts[4].equals("true") ? "Succés" : "Echec") +
                         " | Raison: " + parts[5] +
                         " | Cout: " + parts[6] + "M€");
             }

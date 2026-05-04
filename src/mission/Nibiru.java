@@ -6,7 +6,7 @@ public class Nibiru extends Missions {
 
     public Nibiru() {
         // Nom, distance en km, coefficient carburant, habitée requise
-        super("mission.Nibiru", 900000000, 0.000008, true);
+        super("Nibiru", 900000000, 0.000008, true);
     }
 
     // Calcul du carburant spécifique à cette mission

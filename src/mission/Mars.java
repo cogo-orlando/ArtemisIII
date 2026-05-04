@@ -2,7 +2,7 @@ package mission;
 
 public class Mars extends Missions {
     public Mars() {
-        super("mission.Mars", 225000000, 0.000015, true );
+        super("Mars", 225000000, 0.000015, true );
     }
 
     @Override
