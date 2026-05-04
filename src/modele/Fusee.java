@@ -53,9 +53,10 @@ public class Fusee {
         }
     }
 
-    // Calcul de la masse totale : lanceur + capsule + tous les boosters
+    // Calcul de la masse totale : capsule + tous les boosters
     public double getMasseTotale() {
-        double masse = lanceur.getMasseTonnes() + capsule.getMasseTonnes();
+        // On compte seulement capsule + boosters
+        double masse = capsule.getMasseTonnes();
         for (Boosters b : boosters) {
             masse += b.getMasseTonnes();
         }
