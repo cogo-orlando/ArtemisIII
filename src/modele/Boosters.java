@@ -7,7 +7,7 @@ public class Boosters {
     private String nom;
     private double pousseekN;    // Poussée additionnelle en kilonewtons
     private double masseTonnes;  // Masse du booster en tonnes
-    private double prixMillions; // Prix en millions d'euros
+    private double prixMillions; // Prix en millions
 
     // Constructeur avec tous les attributs
     public Boosters(String nom, double pousseekN, double masseTonnes,

@@ -17,9 +17,7 @@ public abstract class Lanceurs {
 
     // Constructeur commun à tous les lanceurs
     // Appelé via super(...) dans chaque sous-classe
-    public Lanceurs(String nom, double prixMillions, double masseTonnes,
-                    double carburantMaxTonnes, double chargeUtileMaxTonnes,
-                    int boostersMax, boolean habite) {
+    public Lanceurs(String nom, double prixMillions, double masseTonnes, double carburantMaxTonnes, double chargeUtileMaxTonnes, int boostersMax, boolean habite) {
         this.nom = nom;
         this.prixMillions = prixMillions;
         this.masseTonnes = masseTonnes;
